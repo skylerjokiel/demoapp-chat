@@ -9,8 +9,8 @@ import SwiftUI
 
 // Constants for game settings
 let gridSize: CGFloat = 20
-let horizontalPadding: CGFloat = 40
-let verticalPadding: CGFloat = 200
+let horizontalPadding: CGFloat = 30
+let verticalPadding: CGFloat = 250
 
 // Enum representing directions
 enum Direction {
@@ -45,7 +45,7 @@ struct SnakeGameView: View {
                     }
                     
                     // Food (replaced with rat emoji)
-                    Text("🐀")
+                    Text("🍓")
                         .font(.system(size: min(calculatedGameWidth, calculatedGameHeight) * 0.05)) // Dynamically adjust font size
                         .position(viewModel.food.position)
                         .zIndex(1) // Ensure the food is on top of the snake

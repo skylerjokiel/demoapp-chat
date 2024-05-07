@@ -65,6 +65,10 @@
 		14E834CC2953C7B20027D750 /* RoomEditScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E834CA2953C7B20027D750 /* RoomEditScreenViewModel.swift */; };
 		14E834CF2953C7B90027D750 /* RoomsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E834CD2953C7B90027D750 /* RoomsListScreen.swift */; };
 		14E834D02953C7B90027D750 /* RoomsListScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E834CE2953C7B90027D750 /* RoomsListScreenVM.swift */; };
+		9FAAB1332BE52A0D003C0422 /* FireworksAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAB12F2BE52A0D003C0422 /* FireworksAnimation.swift */; };
+		9FAAB1342BE52A0D003C0422 /* SnakeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAB1302BE52A0D003C0422 /* SnakeGame.swift */; };
+		9FAAB1352BE52A0D003C0422 /* SnakeSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAB1312BE52A0D003C0422 /* SnakeSegment.swift */; };
+		9FAAB1362BE52A0D003C0422 /* SnakeGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAB1322BE52A0D003C0422 /* SnakeGameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +142,10 @@
 		14E834CD2953C7B90027D750 /* RoomsListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsListScreen.swift; sourceTree = "<group>"; };
 		14E834CE2953C7B90027D750 /* RoomsListScreenVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomsListScreenVM.swift; sourceTree = "<group>"; };
 		14E834D22953C7F60027D750 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9FAAB12F2BE52A0D003C0422 /* FireworksAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireworksAnimation.swift; sourceTree = "<group>"; };
+		9FAAB1302BE52A0D003C0422 /* SnakeGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeGame.swift; sourceTree = "<group>"; };
+		9FAAB1312BE52A0D003C0422 /* SnakeSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeSegment.swift; sourceTree = "<group>"; };
+		9FAAB1322BE52A0D003C0422 /* SnakeGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeGameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +359,7 @@
 		14E834BC2953C6F60027D750 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				9FAAB12E2BE529F3003C0422 /* Snake */,
 				14A0B88129D60C3F00D2D625 /* MessageEditView */,
 				14E834BD2953C70B0027D750 /* ChatScreen */,
 				1493FF672978763500397DAB /* CodeScanner */,
@@ -400,6 +409,17 @@
 				14E834CA2953C7B20027D750 /* RoomEditScreenViewModel.swift */,
 			);
 			path = RoomEditScreen;
+			sourceTree = "<group>";
+		};
+		9FAAB12E2BE529F3003C0422 /* Snake */ = {
+			isa = PBXGroup;
+			children = (
+				9FAAB12F2BE52A0D003C0422 /* FireworksAnimation.swift */,
+				9FAAB1302BE52A0D003C0422 /* SnakeGame.swift */,
+				9FAAB1322BE52A0D003C0422 /* SnakeGameViewModel.swift */,
+				9FAAB1312BE52A0D003C0422 /* SnakeSegment.swift */,
+			);
+			path = Snake;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -591,6 +611,7 @@
 				14A0B87E29D3BC4100D2D625 /* UIImage+Rotation.swift in Sources */,
 				14A0B87D29D3BC4100D2D625 /* TemporaryFile.swift in Sources */,
 				14B4E2622978F23E0069B69D /* ExpandingTextView.swift in Sources */,
+				9FAAB1362BE52A0D003C0422 /* SnakeGameViewModel.swift in Sources */,
 				14B98AAF297C7CB600509E57 /* RoomDetailsView.swift in Sources */,
 				14CADB2E293FEBD500BED068 /* DittoChatApp.swift in Sources */,
 				14E834D02953C7B90027D750 /* RoomsListScreenVM.swift in Sources */,
@@ -606,7 +627,9 @@
 				14A0B87829D3BBB400D2D625 /* MessageBubbleVM.swift in Sources */,
 				14A0B87A29D3BBC400D2D625 /* DittoProgressView.swift in Sources */,
 				14E57BB629D8AA2700D71154 /* EditMessageBubbleView.swift in Sources */,
+				9FAAB1342BE52A0D003C0422 /* SnakeGame.swift in Sources */,
 				14A2B74C29899ABF00E0FF86 /* DittoToolsUtilities.swift in Sources */,
+				9FAAB1332BE52A0D003C0422 /* FireworksAnimation.swift in Sources */,
 				143FFCC02B20F39C0085A2EF /* DittoToolsListItem.swift in Sources */,
 				142B278E2A39290700C09751 /* Env.swift in Sources */,
 				14BB526429A010790072C4AD /* RoomsListRowItem.swift in Sources */,
@@ -616,6 +639,7 @@
 				1493FF6B2978763500397DAB /* QRCodeView.swift in Sources */,
 				14B4E2692978F2A40069B69D /* MessageBubbleView.swift in Sources */,
 				14E834CC2953C7B20027D750 /* RoomEditScreenViewModel.swift in Sources */,
+				9FAAB1352BE52A0D003C0422 /* SnakeSegment.swift in Sources */,
 				14E834B72953C6E60027D750 /* User.swift in Sources */,
 				14A0B88329D60C6800D2D625 /* MessageEditView.swift in Sources */,
 				14A0B88029D49E7200D2D625 /* GeneralErrorView.swift in Sources */,
@@ -781,7 +805,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DittoChat/Preview Content\"";
-				DEVELOPMENT_TEAM = 3T2VMFZPPQ;
+				DEVELOPMENT_TEAM = Z6L7W8WM98;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DittoChat/Info.plist;
@@ -799,7 +823,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 4.0.3;
-				PRODUCT_BUNDLE_IDENTIFIER = live.ditto.Chat;
+				PRODUCT_BUNDLE_IDENTIFIER = live.lennert.ditto.Chat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -815,7 +839,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DittoChat/Preview Content\"";
-				DEVELOPMENT_TEAM = 3T2VMFZPPQ;
+				DEVELOPMENT_TEAM = Z6L7W8WM98;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DittoChat/Info.plist;
@@ -833,7 +857,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 4.0.3;
-				PRODUCT_BUNDLE_IDENTIFIER = live.ditto.Chat;
+				PRODUCT_BUNDLE_IDENTIFIER = live.lennert.ditto.Chat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
