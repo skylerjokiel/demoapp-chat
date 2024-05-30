@@ -21,9 +21,10 @@ buildscript {
 }
 
 plugins {
-    id "com.android.application" version '8.0.2' apply false
-    id "com.android.library" version '8.0.2' apply false
-    id "org.jetbrains.kotlin.android" version "1.8.21" apply false
+    // The AGP, Kotlin and Gradle wrapper versions need to be aligned in order to use the
+    // includeBuild and dependencySubstitution features in settings.gradle.
+    id "com.android.application" version "7.4.1" apply false
+    id "org.jetbrains.kotlin.android" version "1.7.10" apply false
     id "com.google.dagger.hilt.android" version "$hilt_version" apply false
 }
 
