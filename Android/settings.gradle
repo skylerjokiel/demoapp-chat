@@ -14,3 +14,11 @@ dependencyResolutionManagement {
 }
 rootProject.name = "chat"
 include ':app'
+
+def androidSDK = file("../ditto/android")
+includeBuild(androidSDK) {
+    name = "androidSDK"
+    dependencySubstitution {
+        substitute module('live.ditto:ditto') using project(':ditto')
+    }
+}
